@@ -1,0 +1,84 @@
+:root {
+    --border-color: rgba(135, 135, 135, 0.5);
+}
+
+header,
+#nav-menu,
+#extras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+header {
+    padding: 1rem 15rem;
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 1px;
+}
+
+header * {
+    transition-duration: .4s;
+}
+
+#site-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+#nav-menu {
+    justify-content: space-evenly;
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    width: 100%;
+    max-width: 30%;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+#extras {
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+#extras > div,
+#login-btn,
+#signup-btn {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+#login-btn,
+#signup-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+#login-btn > img,
+#signup-btn > img {
+    height: 1.3rem;
+}
+
+#github-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.2rem;
+}
+
+#github-link > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#site-title:hover,
+li:hover,
+#login-btn:hover,
+#signup-btn:hover,
+#github-link:hover {
+    transform: scale(1.1);
+}
