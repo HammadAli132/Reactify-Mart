@@ -3,7 +3,7 @@
 }
 
 header,
-#nav-menu,
+#navMenu,
 #extras {
     display: flex;
     align-items: center;
@@ -20,17 +20,17 @@ header * {
     transition-duration: .4s;
 }
 
-#site-title {
+#siteTitle {
     font-size: 2.6rem;
     font-weight: 700;
 }
 
-#nav-menu {
+#navMenu {
     justify-content: space-evenly;
     border: 2px solid var(--border-color);
     padding: 10px;
     width: 100%;
-    max-width: 30%;
+    max-width: 500px;
     border-radius: 30px;
     font-size: 1.2rem;
 }
@@ -42,14 +42,14 @@ header * {
 }
 
 #extras > div,
-#login-btn,
-#signup-btn {
+#loginBtn,
+#signupBtn {
     border: 1px solid var(--border-color);
     border-radius: 10px;
 }
 
-#login-btn,
-#signup-btn {
+#loginBtn,
+#signupBtn {
     display: flex;
     align-items: center;
     gap: 0.7rem;
@@ -57,28 +57,28 @@ header * {
     cursor: pointer;
 }
 
-#login-btn > img,
-#signup-btn > img {
+#loginBtn > img,
+#signupBtn > img {
     height: 1.3rem;
 }
 
-#github-link {
+#githubLink {
     height: 2.5rem;
     width: 2.5rem;
     padding: 0.2rem;
 }
 
-#github-link > img {
+#githubLink > img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 
-#site-title:hover,
+#siteTitle:hover,
 li:hover,
-#login-btn:hover,
-#signup-btn:hover,
-#github-link:hover {
+#loginBtn:hover,
+#signupBtn:hover,
+#githubLink:hover {
     transform: scale(1.1);
 }
