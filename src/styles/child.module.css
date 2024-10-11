@@ -36,12 +36,14 @@
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
+    text-align: start;
 }
 
 .liDescription {
     font-weight: 300;
     opacity: 0.5;
     font-size: 1.1rem;
+    text-align: start;
 }
 
 .liLogo {

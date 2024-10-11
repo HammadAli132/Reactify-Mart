@@ -1,3 +1,4 @@
+import CardGrid from "./LandingPage/CardGrid";
 import Hero from "./LandingPage/Hero";
 import Solutions from "./LandingPage/Solutions";
 import Works from "./LandingPage/Works";
@@ -8,6 +9,7 @@ export default function LandingPage() {
             <Hero />
             <Solutions />
             <Works />
+            <CardGrid />
         </>
     )
 }
