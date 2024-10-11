@@ -1,0 +1,84 @@
+:root {
+    --purple-bg: #703BF7;
+    --light-purple-bg: #8a5ff8;
+    --extra-light-purple-bg: #a17dfe;
+    --dark-bg: #212121;
+    --light-dark-bg: #313131;
+    --extra-dark-bg: #141414;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.li {
+    border: 4px solid var(--light-dark-bg);
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    column-gap: 2rem;
+    padding: 1.25rem 1rem;
+    background-color: var(--dark-bg);
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 540px;
+    transition: all .3s;
+}
+
+.liActive {
+    border: 4px solid var(--purple-bg);
+    background-color: var(--extra-dark-bg);
+}
+
+.liHeading {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.liDescription {
+    font-weight: 300;
+    opacity: 0.5;
+    font-size: 1.1rem;
+}
+
+.liLogo {
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--dark-bg);
+    align-self: center;
+}
+
+.liLogo > img {
+    height: 100%;
+    width: 100%;
+}
+
+.imageChild {
+    width: 500px;
+    height: 360px;
+    transition: all .3s;
+}
+
+.animateImage {
+    animation: imageChild-animation .7s forwards;
+}
+
+@keyframes imageChild-animation {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+.imageChild > img {
+    height: 100%;
+    width: 100%;
+}

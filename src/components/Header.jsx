@@ -9,9 +9,9 @@ export default function Header() {
         <header>
             <span id={styles.siteTitle}> <Link to="/">Reactify Mart</Link> </span>
             <ul id={styles.navMenu}>
-                <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="products">Products</Link> </li>
-                <li> <Link to="about">About Us</Link> </li>
+                <li className={styles.li}> <Link to="/">Home</Link> </li>
+                <li className={styles.li}> <Link to="products">Products</Link> </li>
+                <li className={styles.li}> <Link to="about">About Us</Link> </li>
             </ul>
             <div id={styles.extras}>
                 <Link id={styles.loginBtn} to="login">

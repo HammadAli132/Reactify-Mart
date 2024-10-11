@@ -1,0 +1,30 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    text-align: center;   
+}
+
+#description,
+.leftAlignedDescription {
+    font-size: 1.3rem;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 200;
+    max-width: 800px;
+    margin-top: 1rem;
+}
+
+.leftAlignedTitle {
+    align-self: flex-start;
+    margin-top: 5rem;
+}
+
+.leftAlignedDescription {
+    text-align: start;
+    margin-top: 1rem;
+    max-width: 500px;
+}
