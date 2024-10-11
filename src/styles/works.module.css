@@ -1,0 +1,35 @@
+:root {
+    --purple-bg: #703BF7;
+    --light-purple-bg: #8a5ff8;
+    --extra-light-purple-bg: #a17dfe;
+    --dark-bg: #212121;
+    --light-dark-bg: #313131;
+    --extra-dark-bg: #141414;
+}
+
+p {
+    text-align: center;
+}
+
+#container {
+    background-color: var(--extra-dark-bg);
+    padding: 10rem 0;
+    position: relative;
+    transform: translateY(-60px);
+    z-index: -10;
+}
+
+#containerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#description {
+    font-size: 1.3rem;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 200;
+    max-width: 800px;
+}

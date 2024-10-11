@@ -14,8 +14,8 @@ export default function ImageChild(props) {
     },[currentItem])
 
     return (
-        <div className={styles.imageChild}>
-            <img ref={imgRef} src={listOfIllustrations[currentItem]} alt="Error" />
+        <div ref={imgRef} className={styles.imageChild}>
+            <img src={listOfIllustrations[currentItem]} alt="Error" />
         </div>
     )
 }
