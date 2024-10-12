@@ -1,0 +1,90 @@
+:root {
+    --purple-bg: #703BF7;
+    --light-purple-bg: #8a5ff8;
+    --extra-light-purple-bg: #a17dfe;
+    --dark-bg: #212121;
+    --light-dark-bg: #313131;
+    --extra-dark-bg: #141414;
+}
+
+#container {
+    background-color: var(--extra-dark-bg);
+}
+
+#testimonialDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc {
+    font-size: 1.3rem;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 200;
+    max-width: 800px;
+    margin-top: 1rem;
+}
+
+.companyLogos {
+    height: 50px;
+}
+
+.companyLogos > img {
+    height: 100%;
+    width: 100%;
+}
+
+#list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: 5rem 0;
+}
+
+#testimonial {
+    border: 1px solid rgb(112 59 247);
+    border-radius: .25rem;
+    background-color: var(--dark-bg);
+    position: relative;
+    padding: 3.5rem 2.5rem 1.5rem 2.5rem;
+    width: 100%;
+    max-width: 768px;
+}
+
+#quote {
+    opacity: .7;
+}
+
+#author {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+#ceo {
+    margin-top: .5rem;
+    font-weight: 300;
+    opacity: .8;
+}
+
+#ceo > a {
+    color: rgb(0, 200, 255);
+}
+
+#ceo > a:hover {
+    text-decoration: underline;
+}
+
+#profilePicture {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 20;
+    background: url("../assets/profile.jpg") center center/cover no-repeat;
+}

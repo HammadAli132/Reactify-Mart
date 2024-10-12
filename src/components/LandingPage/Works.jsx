@@ -1,5 +1,4 @@
 import styles from "../../styles/works.module.css"
-import CardGrid from "./CardGrid"
 
 export default function Works() {
     return (
@@ -7,7 +6,6 @@ export default function Works() {
             <div className="max-width" id={styles.containerDiv}>
                 <p>How Simple works</p>
                 <p id={styles.description}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
-                {/* <CardGrid /> */}
             </div>
         </section>
     )
