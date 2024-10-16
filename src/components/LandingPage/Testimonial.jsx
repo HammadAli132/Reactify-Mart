@@ -19,7 +19,7 @@ export default function Testimonial() {
                     ))}
                 </ul>
                 <div id={styles.testimonial}>
-                    <p id={styles.quote} className={styles.desc}>" I love this product and would recommend it to anyone. Could be not easier to use, and our multiple Branch are doing wonderful. We get nice comments all the time. "</p>
+                    <p id={styles.quote} className={styles.desc}>&#xFF02; I love this product and would recommend it to anyone. Could be not easier to use, and our multiple Branch are doing wonderful. We get nice comments all the time. &#xFF02;</p>
                     <p id={styles.author}>Darya Finger</p>
                     <p id={styles.ceo}>CEO & Co-Founder <a href="#">@Ashon</a> </p>
                     <div id={styles.profilePicture}></div>

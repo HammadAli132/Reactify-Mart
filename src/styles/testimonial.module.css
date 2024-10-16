@@ -46,7 +46,7 @@
 #testimonial {
     border: 1px solid rgb(112 59 247);
     border-radius: .25rem;
-    background-color: var(--dark-bg);
+    background-color: #1a1a1a;
     position: relative;
     padding: 3.5rem 2.5rem 1.5rem 2.5rem;
     width: 100%;

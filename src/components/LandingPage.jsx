@@ -1,3 +1,4 @@
+import CallToAction from "./LandingPage/CallToAction";
 import CardGrid from "./LandingPage/CardGrid";
 import Hero from "./LandingPage/Hero";
 import Solutions from "./LandingPage/Solutions";
@@ -12,6 +13,7 @@ export default function LandingPage() {
             <Works />
             <CardGrid />
             <Testimonial />
+            <CallToAction />
         </>
     )
 }
