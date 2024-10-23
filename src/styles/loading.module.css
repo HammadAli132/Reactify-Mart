@@ -1,0 +1,82 @@
+:root {
+    --purple-bg: #703BF7;
+    --light-purple-bg: #8a5ff8;
+    --extra-light-purple-bg: #a17dfe;
+    --dark-bg: #212121;
+    --light-dark-bg: #313131;
+    --extra-dark-bg: #141414;
+}
+
+#loadingGif {
+    height: 100px;
+    margin-top: 8rem;
+}
+
+#error {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 8rem;
+}
+
+#productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-top: 8rem;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    overflow: hidden;
+}
+
+.productCard > img {
+    height: 50%;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.productCard > p {
+    padding: 0 1rem;
+    text-align: start;
+}
+
+.productTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.productDesc {
+    font-size: .85rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.row {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.productPrice {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.productExp {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--purple-bg);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
