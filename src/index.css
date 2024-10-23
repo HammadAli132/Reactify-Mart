@@ -30,6 +30,12 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -58,6 +64,7 @@ main {
 footer {
   background-color: #141414;
   padding: 5rem 0;
+  margin-top: auto;
 }
 
 .footer-border {

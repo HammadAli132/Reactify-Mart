@@ -1,0 +1,78 @@
+:root {
+    --purple-bg: #703BF7;
+    --light-purple-bg: #8a5ff8;
+    --extra-light-purple-bg: #a17dfe;
+    --dark-bg: #212121;
+    --light-dark-bg: #313131;
+    --extra-dark-bg: #141414;
+}
+
+#section {
+    background-color: var(--extra-dark-bg);
+    min-height: 74.5vh;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+#formDiv {
+    border: 4px solid var(--light-dark-bg);
+    border-radius: 5px;
+    background-color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#formTitle {
+    color: var(--purple-bg);
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+input {
+    background-color: var(--extra-dark-bg);
+    border: 1px solid var(--light-dark-bg);
+    border-radius: 10px;
+    padding: 1.2rem;
+    min-width: 500px;
+}
+
+input:focus {
+    outline: 1px solid var(--purple-bg);
+}
+
+.button {
+    width: 300px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#loginBtn {
+    background-color: var(--purple-bg);
+}
+
+#signinBtn {
+    background-color: var(--light-dark-bg);
+    margin-top: -1rem;
+}
