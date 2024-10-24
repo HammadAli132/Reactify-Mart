@@ -1,6 +1,6 @@
 import App from "../App.jsx"
 import Products from "../components/Products.jsx"
-import About from "../components/About.jsx"
+import Cart from "../components/Cart.jsx"
 import Login from "../components/Login.jsx"
 import SignUp from "../components/SignUp.jsx"
 import LandingPage from "../components/LandingPage.jsx"
@@ -24,8 +24,8 @@ const routes = [
                 element: <ProductDetail />
             },
             {
-                path: "about",
-                element: <About />
+                path: "cart",
+                element: <Cart />
             },
             {
                 path: "login",

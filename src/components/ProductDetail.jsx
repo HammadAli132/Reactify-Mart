@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
 import loadingGif from "../assets/loading.gif"
 import styles from "../styles/productDetails.module.css"
 import { useParams } from "react-router-dom";
+import { productAndCartContext } from "../App";
 
 function useProducts() {
     const [isloading, setIsLoading] = useState(true)
@@ -35,6 +36,7 @@ function useProducts() {
 
 export default function Products() {
     const {isloading, isError, result} = useProducts()
+    const {products, addToCart} = useContext(productAndCartContext)
 
     if (isloading)
         return (
@@ -57,7 +59,7 @@ export default function Products() {
                         <p className={styles.productDesc}>{result.description}</p>
                         <div className={styles.row}>
                             <span className={styles.productPrice}>{result.price}$</span>
-                            <button>Add To Cart</button>
+                            <button onClick={() => addToCart([...products, result])}>Add To Cart</button>
                         </div>
                     </div>
                 </div>
