@@ -1,0 +1,91 @@
+:root {
+    --purple-bg: #703BF7;
+    --light-purple-bg: #8a5ff8;
+    --extra-light-purple-bg: #a17dfe;
+    --dark-bg: #212121;
+    --light-dark-bg: #313131;
+    --extra-dark-bg: #141414;
+}
+
+#loadingGif {
+    height: 100px;
+    margin-top: 8rem;
+}
+
+#error {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 8rem;
+}
+
+#mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 8rem 0;
+}
+
+#images {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#images > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.productTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.category {
+    font-size: .9rem;
+    color: silver;
+}
+
+.productDesc {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.row {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.productPrice {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+button {
+    background-color: var(--purple-bg);
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

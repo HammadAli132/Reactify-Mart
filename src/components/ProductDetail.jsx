@@ -1,18 +1,19 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import loadingGif from "../assets/loading.gif"
-import styles from "../styles/loading.module.css"
-import { Link } from "react-router-dom";
+import styles from "../styles/productDetails.module.css"
+import { useParams } from "react-router-dom";
 
 function useProducts() {
     const [isloading, setIsLoading] = useState(true)
     const [isError, setIsError] = useState(false)
     const [result, setResult] = useState(null)
+    const {id} = useParams();
 
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch(new Request("https://api.escuelajs.co/api/v1/products?offset=0&limit=48", {mode: "cors"}))
+                const response = await fetch(new Request(`https://api.escuelajs.co/api/v1/products/${id}`, {mode: "cors"}))
                 if (response.ok) {
                     const data = await response.json()
                     setResult(data)
@@ -27,15 +28,9 @@ function useProducts() {
             }
         }
         fetchData()
-    }, [])
+    })
 
     return {isloading, isError, result}
-}
-
-function getExerpt(str) {
-    if (str.length > 20)
-        return str.substring(0, 150) + "..."
-    return str
 }
 
 export default function Products() {
@@ -52,23 +47,20 @@ export default function Products() {
     return (
         <section className="container">
             <div className="max-width">
-                <ul id={styles.productGrid}>
-                    {result.map((prod, index) => {
-                        return(
-                            <li key={index}
-                                className={styles.productCard}
-                            >
-                                <img src={prod.images[0]} alt="Error" />   
-                                <p className={styles.productTitle}>{prod.title}</p>
-                                <p className={styles.productDesc}>{getExerpt(prod.description)}</p>
-                                <div className={styles.row}>
-                                    <span className={styles.productPrice}>{prod.price}$</span>
-                                    <Link to={`/products/${prod.id}`} className={styles.productExp}>Explore Item</Link>
-                                </div>
-                            </li>
-                        ) 
-                    })}
-                </ul>
+                <div id={styles.mainDiv}>
+                    <div id={styles.images}>
+                        <img src={result.images[0]} alt="Error" />   
+                    </div>
+                    <div id={styles.details}>
+                        <p className={styles.productTitle}>{result.title}</p>
+                        <p className={styles.category}>Category: {result.category.name}</p>
+                        <p className={styles.productDesc}>{result.description}</p>
+                        <div className={styles.row}>
+                            <span className={styles.productPrice}>{result.price}$</span>
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )

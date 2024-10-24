@@ -4,6 +4,7 @@ import About from "../components/About.jsx"
 import Login from "../components/Login.jsx"
 import SignUp from "../components/SignUp.jsx"
 import LandingPage from "../components/LandingPage.jsx"
+import ProductDetail from "../components/ProductDetail.jsx"
 
 const routes = [
     {
@@ -17,6 +18,10 @@ const routes = [
             {
                 path: "products",
                 element: <Products />
+            },
+            {
+                path: "products/:id",
+                element: <ProductDetail />
             },
             {
                 path: "about",
